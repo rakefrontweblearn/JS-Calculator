@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Json Data</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="style.css" type="text/css">
+ 
+</head>
+
+<body>
+      <div class="container"><br><br>    
+         <section>
+           <div class="row">
+		    <div class="col-xs-3">
+		   		<input type="text" id="var1" onkeyUp="document.getElementById('displaytext').innerHTML = this.value" style="text-align:center">
+		     </div>
+           <div class="col-xs-2">
+			<h3 align="center" id="symbol" style="margin-left: 180px;"></h3>
+		   </div>
+             
+			 <div class="col-xs-3">
+		  		 <input type="text" id="var2" style="text-align:center">				
+		     </div>   		   
+		    	
+           <div class="col-xs-1">
+		   <h3 align="center" style="margin-left: -250px;">=</h3>
+		   </div>
+		   
+			<div class="col-xs-3">
+			  <input type="text"  id="var3" style="text-align:center">	     
+			</div>
+        </div>
+		  <div class="row">
+			<button type="button" class="btn btn-warning und">Undo</button>
+			<div id="displaytext"></div>
+			</section><br/><br/>  
+			
+			   <section>
+			    <span>
+				<button type="button" class="btn btn-info" onclick="doAdd()">Add</button>
+				<button type="button" class="btn btn-warning" onclick="doDifference()">Difference</button>
+				<button type="button" class="btn btn-primary" onclick="doProduct()">Product</button>
+				<button type="button" class="btn btn-default" onclick="doDivison()">Divison</button>
+				</span><br>
+				<button type="button" class="btn btn-danger" onclick="doClear()">Clear</button>
+				<button type="button" class="btn btn-success" onclick="doResult()">Result</button>
+			  </section>
+			  
+			  </div>
+                
+</body>
+</html>
